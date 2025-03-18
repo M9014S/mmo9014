@@ -1,0 +1,231 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Encabezado */
+  header {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+  
+  /* Sección principal (Hero) con degradado */
+  #hero {
+    background: linear-gradient(135deg, #ffc107, #333);
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  #hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #hero p {
+    font-size: 1.3rem;
+  }
+  
+  /* Sección "Sobre mí" */
+  #about {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+  
+  .profile {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .profile .description {
+    flex: 1;
+  }
+  
+  .profile .description h2 {
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 2rem;
+  }
+  
+  .profile .description p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Sección de Servicios con degradado */
+  #services {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #666, #000);
+    color: #fff;
+    text-align: center;
+  }
+  
+  #services h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .service-item a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .service-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Sección de Galería de Proyectos */
+  #gallery {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+  }
+  
+  #gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  .gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Sección de Referencias */
+  #references {
+    padding: 60px 20px;
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #references h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .companies {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .companies img {
+    max-width: 150px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+  }
+  
+  .companies img:hover {
+    filter: brightness(1);
+  }
+  
+  /* Pie de página */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .profile {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile img {
+      margin-bottom: 20px;
+    }
+  
+    nav a {
+      margin: 0 10px;
+      font-size: 0.9rem;
+    }
+  }
+  
